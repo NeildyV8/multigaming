@@ -1,5 +1,6 @@
+}
 {
-  "name": "bot-multigaming",
+  "name": "multigaming",
   "version": "1.0.0",
   "description": "Bot Discord cree par GForceV8 pour MultiGaming",
   "main": "index.js",
@@ -9,6 +10,9 @@
   "author": "GForceV8",
   "license": "ISC",
   "dependencies": {
-    "discord.js": "^11.3.2"
+    "discord.js": "^11.2.1",
+    "ffmpeg-binaries": "^3.2.2-3",
+    "opusscript": "0.0.4",
+    "ytdl-core": "^0.18.1"
   }
 }
