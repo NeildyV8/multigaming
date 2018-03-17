@@ -9,7 +9,7 @@ bot.on("ready", function() {
 
 bot.login("MzEzMjY2MjE1NTcxMTYxMDkw.DY2oYA.V2IIy22JYTb0bKS8e21ub3B7C8o");
 
-const PREFIX = "*";
+const PREFIX = "!";
 
 const EVERYONE = "@";
 
