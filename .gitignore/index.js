@@ -209,7 +209,7 @@ bot.on("message", async function(message) {
             break; 
 
             default:
-            message.channel.sendMessage(":x: Commande invalide. Fait *aide pour voir toutes les commandes disponibles !")
+            message.channel.sendMessage(":x: Commande invalide. Fait !aide pour voir toutes les commandes disponibles !")
             message.delete();
         }
     });
