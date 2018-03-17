@@ -178,7 +178,7 @@ bot.on("message", async function(message) {
                 .addField(":busts_in_silhouette: !membres","Cette commande vous affiche le nombre de membre actuel **sur le serveur Discord** MultiGaming.")
                 .addField(":level_slider: !ping","Cette commande vous affiche le ping actuel **du bot**.")
                 .setColor("#0280FD")
-                .setFooter("Aide - MultiGaming par GForceV8#5880")
+                .setFooter("Aide - MultiGaming par @GForceV8")
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setDescription("Voici la liste des commandes du bot MultiGaming - par @GForceV8.")
                 .setTimestamp()
@@ -213,11 +213,5 @@ bot.on("message", async function(message) {
             message.delete();
         }
     });
-	
-	bot.on('message', message => {
-    if (message.content === 'ping') {
-    message.channel.sendMessage('pong');
-  }
-});
 	
 	bot.login(process.env.TOKEN);
