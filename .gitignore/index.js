@@ -3,7 +3,7 @@ const Discord = require("discord.js");
 var bot = new Discord.Client();
 
 bot.on("ready", function() {
-    bot.user.setGame("*aide | MultiGaming");
+    bot.user.setGame("!aide | MultiGaming");
     console.log("Le bot a bien ete connecte")
 });
 
@@ -168,15 +168,15 @@ bot.on("message", async function(message) {
 
             case "aide":
             var embed = new Discord.RichEmbed()
-                .addField(":hammer: *ban", "Cette commande permet de bannir un utilisateur ! Pour l'utiliser, faites *ban @(utilisateur) + (raison)")
-                .addField(":door: *kick", "Cette commande permet de kick un utilisateur ! Pour l'utiliser, faites *kick @(utilisateur) + (raison)")
-                .addField(":wastebasket: *purge", "Cette commande permet de supprimé des messages beaucoup plus rapidement ! Pour l'utiliser, faites *purge (nombredemessages)")
-                .addField(":mute: *mute", "Cette commande permet de muté un utilisateur. Pour l'utiliser, faites .mute @(utilisateur) + (raison)")
-                .addField(":loud_sound: *unmute", "Cette commande permet d'unmute un utilisateur. Pour l'utiliser, faites .unmute @(utilisateur)")
-                .addField(":globe_with_meridians: *site","Cette commande vous affiche le lien du site internet de la TeamV8.")
-                .addField(":red_circle: *twitch","Cette commande vous affiche le lien de la chaîne de live Twitch de GForceV8 (MultiGaming).")
-                .addField(":busts_in_silhouette: *membres","Cette commande vous affiche le nombre de membre actuel **sur le serveur Discord** MultiGaming.")
-                .addField(":level_slider: *ping","Cette commande vous affiche le ping actuel **du bot**.")
+                .addField(":hammer: !ban", "Cette commande permet de bannir un utilisateur ! Pour l'utiliser, faites *ban @(utilisateur) + (raison)")
+                .addField(":door: !kick", "Cette commande permet de kick un utilisateur ! Pour l'utiliser, faites *kick @(utilisateur) + (raison)")
+                .addField(":wastebasket: !purge", "Cette commande permet de supprimé des messages beaucoup plus rapidement ! Pour l'utiliser, faites *purge (nombredemessages)")
+                .addField(":mute: !mute", "Cette commande permet de muté un utilisateur. Pour l'utiliser, faites .mute @(utilisateur) + (raison)")
+                .addField(":loud_sound: !unmute", "Cette commande permet d'unmute un utilisateur. Pour l'utiliser, faites .unmute @(utilisateur)")
+                .addField(":globe_with_meridians: !site","Cette commande vous affiche le lien du site internet de la TeamV8.")
+                .addField(":red_circle: !twitch","Cette commande vous affiche le lien de la chaîne de live Twitch de GForceV8 (MultiGaming).")
+                .addField(":busts_in_silhouette: !membres","Cette commande vous affiche le nombre de membre actuel **sur le serveur Discord** MultiGaming.")
+                .addField(":level_slider: !ping","Cette commande vous affiche le ping actuel **du bot**.")
                 .setColor("#0280FD")
                 .setFooter("Aide - MultiGaming par GForceV8#5880")
                 .setAuthor(message.author.username, message.author.avatarURL)
