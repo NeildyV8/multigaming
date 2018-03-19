@@ -220,6 +220,10 @@ bot.on("message", async function(message) {
             message.delete();
             break; 
 
+	    case "gforce":
+            message.channel.sendMessage("Voici le lien de la chaîne de live Twitch de GForceV8 : :red_circle: https://www.twitch.tv/GForceV8")
+            break;
+
             default:
             message.channel.sendMessage(":x: Commande invalide. Fait !aide pour voir toutes les commandes disponibles !")
             message.delete();
