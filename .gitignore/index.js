@@ -7,8 +7,6 @@ bot.on("ready", function() {
     console.log("Le bot a bien ete connecte")
 });
 
-bot.login("MzEzMjY2MjE1NTcxMTYxMDkw.DY2oYA.V2IIy22JYTb0bKS8e21ub3B7C8o");
-
 const PREFIX = "!";
 
 const EVERYONE = "@";
