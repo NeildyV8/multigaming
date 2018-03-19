@@ -186,6 +186,19 @@ bot.on("message", async function(message) {
                 message.channel.sendEmbed(embed)
 
                 break;
+		    
+		    case "aide2":
+            var embed = new Discord.RichEmbed()
+                .addField(":tv: !GForce", "Cette commande permet d'obtinir le lien de la chaine twitch !
+                .setColor("#0280FD")
+                .setFooter("Aide - MultiGaming par @GForceV8")
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setDescription("Voici la liste des commandes du bot MultiGaming - par @GForceV8.")
+                .setTimestamp()
+                message.delete()
+                message.channel.sendEmbed(embed)
+
+                break;
 
             case "MultiGaming":
             message.channel.sendMessage("Le bot MultiGaming est en ligne. ?");
