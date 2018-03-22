@@ -174,19 +174,6 @@ bot.on("message", async function(message) {
                 message.channel.sendEmbed(embed)
 
                 break;
-		    
-            case "aide2":
-            var embed = new Discord.RichEmbed()
-                .addField(":tv: !gforce", "Cette commande vous affiche le lien de la chaîne de live Twitch de GForceV8 !.")
-                .setColor("#0280FD")
-                .setFooter("MultiGaming par @GForceV8")
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setDescription("Voici la liste des commandes du bot MultiGaming - @GForceV8.")
-                .setTimestamp()
-                message.delete()
-                message.channel.sendEmbed(embed)
-
-                break;
 
             case "aide3":
             var embed = new Discord.RichEmbed()
@@ -202,6 +189,19 @@ bot.on("message", async function(message) {
                 .setTimestamp()
                 .message.delete()
                 .message.channel.sendEmbed(embed)
+
+                break;
+		    
+            case "aide2":
+            var embed = new Discord.RichEmbed()
+                .addField(":tv: !gforce", "Cette commande vous affiche le lien de la chaîne de live Twitch de GForceV8 !.")
+                .setColor("#0280FD")
+                .setFooter("MultiGaming par @GForceV8")
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setDescription("Voici la liste des commandes du bot MultiGaming - @GForceV8.")
+                .setTimestamp()
+                message.delete()
+                message.channel.sendEmbed(embed)
 
                 break;
 
