@@ -190,14 +190,11 @@ bot.on("message", async function(message) {
  
             case "test":
             var embed = new Discord.RichEmbed()
-                .addField(":rocket: !ban", "Cette commande permet de bannir un utilisateur ! Pour l'utiliser, faites !ban @(utilisateur) + (raison)")
-                .addField(":door: !kick", "Cette commande permet de kick un utilisateur ! Pour l'utiliser, faites !kick @(utilisateur) + (raison)")
-                .addField(":wastebasket: !purge", "Cette commande permet de supprimé des messages beaucoup plus rapidement ! Pour l'utiliser, faites !purge (nombredemessages)")
-                .addField(":mute: !mute", "Cette commande permet de muté un utilisateur. Pour l'utiliser, faites .mute @(utilisateur) + (raison)")
-                .addField(":loud_sound: !unmute", "Cette commande permet d'unmute un utilisateur. Pour l'utiliser, faites .unmute @(utilisateur)")
-                .addField(":globe_with_meridians: !site","Cette commande vous affiche le lien du site internet de la TeamV8.")
-                .addField(":busts_in_silhouette: !membres","Cette commande vous affiche le nombre de membre actuel **sur le serveur Discord** MultiGaming.")
-                .addField(":level_slider: !ping","Cette commande vous affiche le ping actuel **du bot**.")
+                .addField(":video_game: !arma3", "Donne l'accès au channel du jeu.")
+                .addField(":video_game: !ets2", "Donne l'accès au channel du jeu.")
+                .addField(":video_game: !fortnite", "Donne l'accès au channel du jeu.")
+                .addField(":video_game: !paladins", "Donne l'accès au channel du jeu.")
+                .addField(":video_game: !bientôt", "si demande de jeu.")
                 .setColor("#0280FD")
                 .setFooter("Aide - MultiGaming by @GForceV8")
                 .setAuthor(message.author.username, message.author.avatarURL)
@@ -206,23 +203,6 @@ bot.on("message", async function(message) {
                 message.delete()
                 message.channel.sendEmbed(embed)
 
-                break;
- 
-            case "rls":
-            var embed = new Discord.RichEmbed()
-                .addField(":video_game: !arma3", "Donne l'accès au channel du jeu.")
-                .addField(":video_game: !ets2", "Donne l'accès au channel du jeu.")
-                .addField(":video_game: !fortnite", "Donne l'accès au channel du jeu.")
-                .addField(":video_game: !paladins", "Donne l'accès au channel du jeu.")
-                .addField(":video_game: !bientôt", "si demande de jeu.")
-                .setColor("#0280FD")
-                .setFooter("MultiGaming by @GForceV8")
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setDescription("Voici la liste des Rôles MultiGaming.")
-                .setTimestamp()
-                .message.delete()
-                .message.channel.sendEmbed(embed)
- 
                 break;
  
             case "MultiGaming":
