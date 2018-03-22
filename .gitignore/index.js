@@ -188,13 +188,13 @@ bot.on("message", async function(message) {
 
                 break;
  
-            case "roles":
+            case "rls":
             var embed = new Discord.RichEmbed()
-                .addField(":video_game: !arma3","Donne l'accès au channel du jeu.")
-                .addField(":video_game: !ets2","Donne l'accès au channel du jeu.")
-                .addField(":video_game: !fortnite","Donne l'accès au channel du jeu.")
-                .addField(":video_game: !paladins","Donne l'accès au channel du jeu.")
-                .addField(":video_game: !bientôt","si demande de jeu.")
+                .addField(":video_game: !arma3", "Donne l'accès au channel du jeu.")
+                .addField(":video_game: !ets2", "Donne l'accès au channel du jeu.")
+                .addField(":video_game: !fortnite", "Donne l'accès au channel du jeu.")
+                .addField(":video_game: !paladins", "Donne l'accès au channel du jeu.")
+                .addField(":video_game: !bientôt", "si demande de jeu.")
                 .setColor("#0280FD")
                 .setFooter("MultiGaming by @GForceV8")
                 .setAuthor(message.author.username, message.author.avatarURL)
