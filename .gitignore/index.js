@@ -206,7 +206,7 @@ bot.on("message", async function(message) {
                 break;
 
             case "MultiGaming":
-            message.channel.sendMessage("Le bot MultiGaming est en ligne. ?");
+            message.channel.sendMessage("Le bot MultiGaming est en ligne.");
             break;
 
             case "site":
