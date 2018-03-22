@@ -175,7 +175,7 @@ bot.on("message", async function(message) {
 
                 break;
 
-            case "aide3":
+            case "roles":
             var embed = new Discord.RichEmbed()
                 .addField(":video_game: ArmA 3","Donne l'accès au channel du jeu.")
                 .addField(":video_game: ETS 2","Donne l'accès au channel du jeu.")
