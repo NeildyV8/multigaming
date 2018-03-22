@@ -191,7 +191,7 @@ bot.on("message", async function(message) {
                 .message.channel.sendEmbed(embed)
 
                 break;
-		    
+ 
             case "aide2":
             var embed = new Discord.RichEmbed()
                 .addField(":tv: !gforce", "Cette commande vous affiche le lien de la chaîne de live Twitch de GForceV8 !.")
