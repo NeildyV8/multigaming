@@ -188,12 +188,12 @@ bot.on("message", async function(message) {
 
                 break;
  
-            case "test":
+            case "roles":
             var embed = new Discord.RichEmbed()
-                .addField(":ArmA_3: ARMA3", "Donne l'accès au channel du jeu.")
-                .addField(":ETS_2: ETS2", "Donne l'accès au channel du jeu.")
-                .addField(":Battle_royale: FORTNITE", "Donne l'accès au channel du jeu.")
-                .addField(":Paladins: PALADINS", "Donne l'accès au channel du jeu.")
+                .addField(":video_game: ARMA 3", "Donne l'accès au channel du jeu.")
+                .addField(":video_game: ETS 2", "Donne l'accès au channel du jeu.")
+                .addField(":video_game: FORTNITE", "Donne l'accès au channel du jeu.")
+                .addField(":video_game: PALADINS", "Donne l'accès au channel du jeu.")
                 .addField(":video_game: Bientôt", "si demande de jeu.")
                 .setColor("#0280FD")
                 .setFooter("Aide - MultiGaming by @GForceV8")
