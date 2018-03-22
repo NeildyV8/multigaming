@@ -203,6 +203,8 @@ bot.on("message", async function(message) {
                 .message.delete()
                 .message.channel.sendEmbed(embed)
 
+                break;
+
             case "MultiGaming":
             message.channel.sendMessage("Le bot MultiGaming est en ligne.");
             break;
