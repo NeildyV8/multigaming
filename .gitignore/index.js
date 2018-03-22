@@ -175,7 +175,7 @@ bot.on("message", async function(message) {
 
                 break;
 		    
-            case "aide2":
+                case "aide2":
             var embed = new Discord.RichEmbed()
                 .addField(":tv: !gforce", "Cette commande vous affiche le lien de la chaîne de live Twitch de GForceV8 !.")
                 .setColor("#0280FD")
@@ -188,7 +188,7 @@ bot.on("message", async function(message) {
 
                 break;
 
-            case "aide3":
+                case "aide3":
             var embed = new Discord.RichEmbed()
                 .addField(":video_game: ArmA 3","Donne l'accès au channel du jeu.")
                 .addField(":video_game: ETS 2","Donne l'accès au channel du jeu.")
