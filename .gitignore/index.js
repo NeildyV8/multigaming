@@ -195,7 +195,7 @@ bot.on("message", async function(message) {
                 .addField(":video_game: FORTNITE","Donne l'accès au channel du jeu.")
                 .addField(":video_game: PALADINS","Donne l'accès au channel du jeu.")
                 .addField(":video_game: "Bientôt si demande jeu"," ".)
-                .setColor("#0280FD")
+                .setColor("#004eff")
                 .setFooter("MultiGaming par @GForceV8")
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setDescription("Voici la liste des Rôles MultiGaming - par @GForceV8.")
