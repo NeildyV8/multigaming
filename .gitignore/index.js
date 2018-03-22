@@ -198,7 +198,7 @@ bot.on("message", async function(message) {
                 .setColor("#0280FD")
                 .setFooter("Aide - MultiGaming par @GForceV8")
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setDescription("Voici la liste des Rôles MultiGaming - par @GForceV8.")
+                .setDescription("Voici la liste des Roles MultiGaming - par @GForceV8.")
                 .setTimestamp()
                 message.delete()
                 message.channel.sendEmbed(embed)
