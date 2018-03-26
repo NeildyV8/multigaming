@@ -11,6 +11,15 @@ const PREFIX = "!";
 
 const EVERYONE = "@";
 
+bot.on("guildMemberRemove", function(member) {
+    member.guild.channels.find("name", "bienvenue").sendMessage(member.toString() + " viens de quitté le serveur, bye bye !" + " :x:");
+});
+
+bot.on("guildMemberAdd", function(member) {
+    member.guild.channels.find("name", "accueil").sendMessage(member.toString() + " Bienvenue sur le serveur **MultiGaming** ! :white_check_mark:");
+    member.addRole(member.guild.roles.find("name", "New"));
+});
+
 bot.on("message", async function(message) {
     if (message.author.equals(bot.user)) return;
 
