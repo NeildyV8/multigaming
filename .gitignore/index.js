@@ -239,7 +239,7 @@ bot.on("message", async function(message) {
             break;
 
 	    case "gforce2":
-            message.channel.sendMessage("GForceV8 est l'empreur de ce serveur :p , et le Chef N°1 de la team V8 avec comme co-chef TribalV8.")
+            message.channel.sendMessage("GForceV8 est l'empereur de ce serveur :p, et le Chef N°1 de la team V8 avec comme co-chef TribalV8..")
             break;
 
 	    case "yoyo2":
