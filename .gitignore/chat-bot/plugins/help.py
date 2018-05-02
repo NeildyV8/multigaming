@@ -33,7 +33,7 @@ class Help(Plugin):
         Plugin.get_help_info = get_help_info
 
     async def generate_help(self, server):
-        enabled_plugins = await self.mee6.plugin_manager.get_all(server)
+        enabled_plugins = await self.multigaming.plugin_manager.get_all(server)
         enabled_plugins = sorted(enabled_plugins, key=lambda p: type(p).__name__)
 
         help_payload = []
@@ -63,8 +63,8 @@ class Help(Plugin):
 
 
     async def on_message(self, message):
-        if message.content =='*help':
-            log.info('{}#{}@{} >> *help'.format(
+        if message.content =='!help':
+            log.info('{}#{}@{} >> !help'.format(
                 message.author.name,GForceV8
                 message.author.discriminator,
                 message.server.name
