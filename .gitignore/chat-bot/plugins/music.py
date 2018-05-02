@@ -30,10 +30,10 @@ class Music(Plugin):
     play_locks = defaultdict(asyncio.Lock)
     call_next = defaultdict(lambda: True)
 
-    @command(pattern='^*play$',
+    @command(pattern='^!play$',
              require_one_of_roles="allowed_roles",
              description="Makes me play the next song in the queue",
-             usage='*play')
+             usage='!play')
     async def play(self, m, args):
         voice = m.server.me.voice_channel
         if not voice:
@@ -155,10 +155,10 @@ class Music(Plugin):
         finally:
             lock.release()
 
-    @command(pattern='^*join',
+    @command(pattern='^!join',
              description="Makes me join your current voice channel",
              require_one_of_roles="allowed_roles",
-             usage='*join')
+             usage='!join')
     async def join(self, message, args):
         voice_channel = message.author.voice.voice_channel
         if not voice_channel:
@@ -171,18 +171,18 @@ class Music(Plugin):
         response = "Connecting to voice channel **{}**".format(voice_channel.name)
         await self.multigaming.send_message(message.channel, response)
 
-    @command(pattern='^*leave',
+    @command(pattern='^!leave',
              description='Makes me leave my current voice channel',
              require_one_of_roles="allowed_roles",
-             usage='*leave')
+             usage='!leave')
     async def leave(self, message, args):
         await self.multigaming.schwifty.voice_disconnect(message.server.id)
         await self.multigaming.ws.voice_state(message.server.id, None, self_mute=True)
 
-    @command(pattern='^*playlist$',
+    @command(pattern='^!playlist$',
              description="Shows the songs in the playlist",
              require_one_of_roles="allowed_roles",
-             usage='*playlist')
+             usage='!playlist')
     async def playlist(self, message, args):
         response = ""
         storage = await self.get_storage(message.server)
@@ -205,10 +205,10 @@ class Music(Plugin):
 
         await self.multigaming.send_message(message.channel, response)
 
-    @command(pattern='^*add (.*)',
+    @command(pattern='^!add (.*)',
              description="Adds a new song in the queue",
              require_one_of_roles="allowed_roles",
-             usage='*add name_of_the_music')
+             usage='!add name_of_the_music')
     async def add(self, message, args):
         search = args[0]
 
