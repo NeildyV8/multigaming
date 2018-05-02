@@ -17,7 +17,7 @@ class EarlyBackers(Plugin):
     ]
 
     async def update_early_backers(self):
-        server = discord.utils.find(lambda s: s.id==self.mee6_server_id,
+        server = discord.utils.find(lambda s: s.id==self.multigaming_server_id,
                                     self.multigaming.servers)
         if not server:
             return
