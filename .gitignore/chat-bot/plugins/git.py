@@ -8,7 +8,7 @@ class Git(Plugin):
     async def get_commands(self, server):
         commands = [
             {
-                'name': '*git',
+                'name': '!git',
                 'description': 'Links to multigaming\'s Github page.'
             },
         ]
