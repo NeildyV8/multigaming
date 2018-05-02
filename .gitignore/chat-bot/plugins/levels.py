@@ -41,7 +41,7 @@ class Levels(Plugin):
     async def is_not_banned(self, member):
         return not await self.is_ban(member)
 
-    @command(pattern="*levels",
+    @command(pattern="!levels",
              description="Get a link to the server leaderboard",
              banned_roles="banned_roles")
     async def levels(self, message, args):
@@ -50,7 +50,7 @@ class Levels(Plugin):
         response += url + " :wink: "
         await self.multigaming.send_message(message.channel, response)
 
-    @command(pattern="(^*rank$)|(^*rank <@!?[0-9]*>$)",
+    @command(pattern="(^!rank$)|(^*rank <@!?[0-9]*>$)",
              description="Get a player info and rank",
              cooldown="cooldown",
              banned_roles="banned_roles")
