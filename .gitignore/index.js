@@ -238,14 +238,6 @@ bot.on("message", async function(message) {
             message.channel.sendMessage("Voici le lien de la chaîne de live Twitch de GForceV8 : :red_circle: https://www.twitch.tv/GForceV8")
             break;
 
-	    case "gforce2":
-            message.channel.sendMessage("GForceV8 est l'empereur de ce serveur :p, et le Chef N°1 de la team V8 avec comme co-chef TribalV8..")
-            break;
-
-	    case "yoyo2":
-            message.channel.sendMessage("Yoyo est le Soufifre de la team V8 :p")
-            break;
-
             default:
             message.channel.sendMessage(":x: Commande invalide. Fait !aide pour voir toutes les commandes disponibles !")
             message.delete();
